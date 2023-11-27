@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="PT-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>13. Hora de Codar!</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;1,300&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<body>
+    <style>
+        * {
+            font-family: 'Poppins', sans-serif;
+            font-size: 15px;
+            margin: 0;
+        }
+
+        nav div {
+            background-color: #14213d;
+            color: #ffffff;
+            margin: 12px;
+            display: inline-block;
+            padding: 40px;
+            justify-content: space-between;
+            border-radius: 15px;
+            align-items: center;
+            text-align: center;
+            margin-right: 0;
+        }
+
+        nav div h2 {
+            font-size: 25px;
+
+        }
+
+        button {
+            padding: 8px;
+            border-radius: 5px;
+            border: 1px;
+            margin-top: 9px;
+            cursor: pointer;
+            background-color: #e5e5e5;
+
+        }
+
+
+
+        footer {
+            background-color: #000000;
+            color: #e5e5e5;
+            font-size: 50px;
+            display: flex;
+            justify-content: center;
+            padding: 20px;
+            font-size: 15px;
+            box-shadow: 5px 5px 5px 5px #ccc;
+
+        }
+
+        div {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-left: 50pX;
+        }
+
+        nav {
+
+            align-items: center;
+            display: inline-block;
+            justify-content: space-between;
+            text-align: center;
+            padding: 25px
+        }
+
+        header {
+            background-color: #fca311;
+            padding: 23px;
+            margin: 0;
+            box-shadow: 3px 3px 3px 3px #ccc;
+        }
+
+        header h1 {
+            height: 100%;
+            font-size: 35px;
+            margin-left: 5px;
+            border: 15px;
+            display: flex;
+            justify-content: center;
+        }
+    </style>
+    <header>
+        <h1> Hora de codar ! Lógica em Javascript. </h1>
+    </header>
+    <main>
+        <nav>
+            <!-- 1. Escreva um programa em Javascript e crie uma variável chamada "nome_do_carro" e 
+            atribua-a um valor "Fusca". Exiba-a ao usuário. */-->
+            <div class="exercicio_1">
+                <h2>Nome do<br> carro</h2>
+                <hr>
+                <button type="button" id="nomeDoCarro" onclick="exibirValor()">Clique Aqui</button>
+            </div>
+
+            <div class="exercicio_2">
+                <!-- Escreva um programa em Javascript em que o usuário informe o seu nome e exiba a mensagem "Olá, [NomeDoUsuario]". */-->
+                <h2>"Olá, <br> [NomeDoUsuario]"</h2>
+                <hr>
+                <button type="button" id="NomeDoUsuario" onclick="perguntarNome()">Clique Aqui</button>
+            </div>
+
+            <div class="retangulo">
+                <!-- Calculo do Retângulo */-->
+                <h2>Calcule a área <br> do retângulo</h2>
+                <hr>
+                <button type="button" id="retangulo" onclick="pergunteRetangulo()">Clique Aqui</button>
+            </div>
+            <div class="quadrado">
+                <!-- Calculo do quadrado */-->
+                <h2>Calcule a área <br>do quadrado</h2>
+                <hr>
+                <button type="button" id="quadrado" onclick="pergunteQuadrado()">Clique Aqui</button>
+            </div>
+            <div class="losango">
+                <!-- Calculo do losango */-->
+                <h2>Calcule a área <br> do losango</h2>
+                <hr>
+                <button type="button" id="losango" onclick="pergunteLosango()">Clique Aqui</button>
+            </div>
+            <div class="trapezio">
+                <!-- Calculo do trapézio */-->
+                <h2>Calcule a área<br> do trapézio</h2>
+                <hr>
+                <button type="button" id="trapezio" onclick="pergunteTrapezio()">Clique Aqui</button>
+            </div>
+            <div class="paralelogramo">
+                <!-- Calculo do paralelogramo */-->
+                <h2>Calcule a área <br>do paralelogramo</h2>
+                <hr>
+                <button type="button" id="paralelogramo" onclick="pergunteParalelogramoTrapezio()">Clique Aqui</button>
+            </div>
+
+            <div class="triangulo">
+                <!-- Calculo do triangulo */-->
+                <h2>Calcule a área do <br> triangulo</h2>
+                <hr>
+                <button type="button" id="triangulo" onclick="pergunteTriangulo()">Clique Aqui</button>
+            </div>
+
+            <div class="circulo">
+                <!-- Calculo do circulo */-->
+                <h2>Calcule a área do <br> circulo</h2>
+                <hr>
+                <button type="button" id="circulo" onclick="pergunteCirculo()">Clique Aqui</button>
+            </div>
+            <div class="exercicio_3">
+                <!-- Escreva um programa em Javascript em que o usuário informe o seu nome e em seguida o programa perguntará a idade do usuário.
+                    Agora o programa deve exibir a mensagem "Olá, [NomeDoUsuario], sua idade é [idade]". */-->
+                <h2>"Olá, [NomeDoUsuario], <br> sua idade é [idade]"</h2>
+                <hr>
+                <button type="button" id="NomeDoUsuarioIdade" onclick="perguntarNomeIdade()">Clique Aqui</button>
+            </div>
+        </nav>
+
+    </main>
+
+    <footer>
+        <h2>Desenvolvido por Camile Santana </h2>
+    </footer>
+
+
+
+    <script> function exibirValor() {
+            let nomeDoCarro = "Fusca";
+            alert(nomeDoCarro);
+            window.document(nomeDoCarro);
+        }
+
+        function perguntarNome() {
+            let nome = prompt("Qual é seu nome?");
+            alert("Olá, " + nome);
+        }
+
+
+        function perguntarNomeIdade() {
+            let nome = prompt("Qual é seu nome?");
+            let idadeString = prompt("Olá, " + nome + ". Quanto anos você tem?");
+            let idade = parseInt(idadeString);
+
+            alert("Olá, " + nome + ". Sua idade é " + idade);
+        }
+
+        function pergunteRetangulo() {
+            let base = parseInt(prompt("Digite o valor da base"));
+            let altura = parseInt(prompt("Digite o valor da altura"));
+            let resultado = base * altura;
+            alert("O valor da área do retângulo é " + resultado);
+
+        }
+
+        function pergunteQuadrado() {
+            let lado1 = parseInt(prompt("Digite o valor de um lado"));
+            let lado2 = parseInt(prompt("Digite o valor do outro lado"));
+            let resultado1 = lado1 * lado2 ** 2;
+            alert("O valor da área do quadrado é " + resultado1);
+        }
+
+        function pergunteLosango() {
+            let diagonalMaior = parseInt(prompt("Digite o valor da diagonal maior"));
+            let diagonalMenor = parseInt(prompt("Digite o valor da diagonal menor"));
+            let resultado3 = diagonalMaior * diagonalMenor / 2;
+            alert("O valor da área do losango é " + resultado3);
+        }
+
+        function pergunteTrapezio() {
+            let baseMaior = parseInt(prompt("Digite o valor da base maior"));
+            let baseMenor = parseInt(prompt("Digite o valor da base menor"));
+            let altura = parseInt(prompt("Digite o valor da altura"));
+
+            let resultado2 = ((baseMaior + baseMenor) * altura) / 2;
+            alert("O valor da área do Trapézio é " + resultado2);
+        }
+
+        function pergunteParalelogramoTrapezio() {
+            let base2 = parseInt(prompt("Digite o valor da base"));
+            let altura2 = parseInt(prompt("Digite o valor da altura"));
+            let resultado4 = base2 * altura2;
+            alert("O valor da área do Paralelogramo é " + resultado4);
+        }
+
+        function pergunteTriangulo() {
+            let base3 = parseInt(prompt("Digite o valor da base"));
+            let altura3 = parseInt(prompt("Digite o valor da altura"));
+            let resultado5 = base3 * altura3 / 2;
+            alert("O valor da área do Triângulo é " + resultado5);
+        }
+
+        function pergunteCirculo() {
+            let raio = parseInt(prompt("Digite o valor do raio "));
+            let resultado6 = Math.PI * (raio * raio);
+            alert("O valor da área do Circulo é " + resultado6);
+
+
+        }</script>
+
+</body>
+
+</html>
