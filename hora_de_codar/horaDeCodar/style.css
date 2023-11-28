@@ -1,0 +1,19 @@
+    /* Estilo base do botão */
+    button {
+      padding: 10px 20px;
+      font-size: 16px;
+      text-align: center;
+      text-decoration: none;
+      border: 2px solid #3498db;
+      color: #3498db;
+      border-radius: 5px;
+      background-color: transparent;
+      cursor: pointer;
+      transition: background-color 0.3s, color 0.3s;
+    }
+
+    /* Efeito hover do botão */
+    button:hover {
+      background-color: #3498db;
+      color: #fff;
+    }
