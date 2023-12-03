@@ -1,11 +1,8 @@
 # Atividades de Lógica em JavaScript
 
-Este repositório contém todos os exercícios de lógica em JavaScript realizados durante a formação no PROA.
+Este repositório compila todos os exercícios de lógica em JavaScript realizados durante a formação no PROA. Ele abrange uma ampla gama de atividades, desde exercícios básicos até projetos práticos, com o objetivo de aprimorar as habilidades em lógica de programação.
 
-## Exercícios de Lógica e Projetos Práticos
-
-Este repositório abrange uma variedade de exercícios de lógica de programação e projetos práticos para aprimorar habilidades. 
-# Projeto de Ajustes e Melhorias - Caixa Eletrônico
+#  Caixa Eletrônico
 
 Este é um projeto que visa implementar melhorias e correções em um caixa eletrônico. Siga as instruções cuidadosamente e experimente à vontade. Lembre-se, não tenha medo de alterar o código, pois estamos aqui para aprender e evoluir!
 
