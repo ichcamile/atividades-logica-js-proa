@@ -129,12 +129,104 @@ document.getElementById("exercicio6").addEventListener("click", exercicio6);
 // Caso o valor informado para qualquer uma das notas esteja fora do limite estabelecido, deve ser solicitado um novo valor ao usuário. 
 
 function exercicio7() {
-    let nota1 = parseFloat(prompt("Qual foi a sua nota em Matemática?"));
-    let nota2 = parseFloat(prompt("Qual foi a sua nota em Quimica?"));
-    let nota3 = parseFloat(prompt("Qual foi a sua nota em Português?"));
-    let nota4 = parseFloat(prompt("Qual foi a sua nota em Física?"));
-    let nota5 = parseFloat(prompt("Qual foi a sua nota em Biolgia?"));
-    let nota6 = parseFloat(prompt("Qual foi a sua nota em Inglês?"));
-    
+    let somaNotas = 0;
+
+    for (let i = 1; i <= 6; i++) {
+        let nota = parseInt(prompt(`Digite a nota ${i}`));
+
+        while (nota > 10 || nota < 0) {
+            const novaNota = parseInt(prompt('Digite apenas nota entre 0 e 10!'));
+            nota = novaNota
+        }
+
+        somaNotas = somaNotas + nota;
+    }
+
+    const media = somaNotas / 6;
+
+    alert(`A media das notas é: ${media}`);
+}
+document.getElementById("exercicio7").addEventListener("click", exercicio7);
+
+
+function exercicio8() {
+
+    let numero = parseInt(prompt("Digite um número"));
+    let listaNumeros = [];
+
+    while (numero <= 1 ) {
+        numero = parseInt(prompt("Digite um número maior que zero!!"));
+    }
+
+
+    for (let i = 1; i <= numero; i++) {
+        listaNumeros.push(i);
+     }
+     alert(`Os números são: ${listaNumeros}`);
 
 }
+
+document.getElementById("exercicio8").addEventListener("click", exercicio8);
+
+
+function exercicio9() {
+    let dezMaiores = [];
+
+    for (let i = 100; i <= 110; i++) {
+        dezMaiores.push(i);
+     }
+     alert(`Os números são: ${dezMaiores}`);
+}
+
+document.getElementById("exercicio9").addEventListener("click", exercicio9);
+
+
+// 10 - Escreva um programa para imprimir todas as tabuadas de 1 a N. N será informado pelo usuário.
+
+function exercicio10() {
+    let numero = parseInt(prompt("Digite um número"));
+    let arrayTabuada = [];
+
+    for (let i = 1; i <= numero; i++) {
+        let tabuadaDoNumero = [];
+
+        for (let index = 1; index <= 10; index++) {
+            tabuadaDoNumero.push(i * index);
+        }
+
+        arrayTabuada.push(tabuadaDoNumero);
+    }
+
+    console.log("Tabuadas de 1 a", numero);
+    
+    for (let i = 0; i < arrayTabuada.length; i++) {
+        console.log(`Tabuada do ${i + 1}: ${arrayTabuada[i]}`);
+    }
+
+    alert("O resultado do exercicio está no console ;)")
+}
+
+
+document.getElementById("exercicio10").addEventListener("click", exercicio10);
+
+
+function exercicio11() {
+    let entreNumeros = [];
+    let foraNumeros = [];
+
+    for (let i = 1; i <= 10; i++) {
+        const numero = parseInt(prompt(`Digite o numero ${i}`));
+
+        if (numero >= 24 && numero <= 42) {
+            entreNumeros.push(numero);
+        } else {
+            foraNumeros.push(numero);
+        }
+    }
+
+    alert(`Os números entre 24 e 42 digitados são: ${entreNumeros}`);
+    alert(`Os números fora deste intervalo são: ${foraNumeros}`);
+}
+
+
+document.getElementById("exercicio11").addEventListener("click", exercicio11);
