@@ -60,7 +60,7 @@ Este é um projeto que visa implementar melhorias e correções em um caixa elet
 
 Bem-vindo ao Hora de Codar 4! Este é um programa simples em JavaScript Vanilla, sem a necessidade de frameworks, construído usando Vite para facilitar o desenvolvimento. Aqui estão as funcionalidades disponíveis:
 
-# Funcionalidades
+### Funcionalidades
 
 1. **Cadastro de Estudantes**
    - Digite os nomes dos estudantes um por um.
