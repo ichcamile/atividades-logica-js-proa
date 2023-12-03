@@ -56,3 +56,24 @@ Este é um projeto que visa implementar melhorias e correções em um caixa elet
 10. **Tabuadas de 1 a N**
 11. **Contagem entre 24 e 42**
 
+## Hora de Codar 4 - JavaScript Simples
+
+Bem-vindo ao Hora de Codar 4! Este é um programa simples em JavaScript Vanilla, sem a necessidade de frameworks, construído usando Vite para facilitar o desenvolvimento. Aqui estão as funcionalidades disponíveis:
+
+# Funcionalidades
+
+1. **Cadastro de Estudantes**
+   - Digite os nomes dos estudantes um por um.
+   - Para encerrar, digite "PARE".
+   - O programa exibirá a quantidade e a lista de estudantes cadastrados.
+
+2. **Verificação de Planetas**
+   - Digite o nome do planeta.
+   - O programa informará se o planeta está na lista predefinida.
+
+3. **Lista de Compras de Frutas**
+   - Digite o nome da fruta para removê-la da lista.
+   - O programa avisa se a fruta não está disponível.
+   - Quando a lista estiver vazia, será exibida a mensagem "Lista de compras finalizada".
+
+ Se precisar de ajuda ou tiver sugestões, estamos aqui para ajudar. Happy coding! 🚀
